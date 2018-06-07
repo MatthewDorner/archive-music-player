@@ -16,7 +16,7 @@ truncateTitle(title) {
 }
 
 truncateDate(date) {
-    return date.substring(0.10);
+    return date.substring(0,10);
 }
 
 isFavorite(i) {
