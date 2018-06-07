@@ -1,4 +1,4 @@
-##**Archive Music Player**
+**##Archive Music Player**
 
 This is a demo app I used to help myself learn React. I used some boilerplate code from these tutorials:
 
