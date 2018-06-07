@@ -25,6 +25,7 @@ View server/config/settings.js. These are the environmental values you must set 
 then run:
 
 npm install
+
 npm start
 
 Then you should be able to access the app on localhost:8000.
