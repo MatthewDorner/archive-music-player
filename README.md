@@ -12,12 +12,10 @@ The application uses archive.org's public API to allow a user to search for and 
 It uses MongoDB to allow a user to create an account and then save a list of their favorite recordings.
 
 To set up:
-
 Go to server/config/settings.js
 These are the environmental values needed for the app: your mongoDb connect string, and an appropriate secret for password encryption.
 
 then run:
-
 npm install
 npm start
 
