@@ -38,7 +38,8 @@ constructor(props) {
 
         // state for the Modal dialog box
         modalWaitStatus: false,
-        modalMessageStatus: false
+        modalMessageStatus: false,
+        message: ""
     }
 
     // methods
