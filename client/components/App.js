@@ -297,7 +297,7 @@ render() {
             </Modal>
             <Modal isOpen={this.state.modalMessageStatus} className='Modal'>
                 <div>{this.state.message}</div>
-                <Button className='controlButton' onClick={this.closeModalMessage}>Close</Button>
+                <Button className='control-button' onClick={this.closeModalMessage}>Close</Button>
             </Modal>
             <div className='controls-container'>
                 <h1>Grateful Dead Player</h1>
@@ -308,7 +308,7 @@ render() {
                     <div className="row">
                         <div className="col-xs-12">
                             <Search searchTextHandler={this.searchTextHandler} />
-                            <Button className='controlButton' onClick={this.viewFavorites}>View Favorites</Button>
+                            <Button className='control-button' onClick={this.viewFavorites}>View Favorites</Button>
                             {this.state.currentMetadata.length > 0 &&
                                 <AudioControl identifier={this.state.currentIdentifier} fileName={this.state.currentMetadata[this.state.trackIndex].name} transportHandler={this.handleTransport} />
                             }

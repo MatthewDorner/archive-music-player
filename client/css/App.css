@@ -13,11 +13,11 @@ body {
   max-width: 1600px;
 }
 
-.userControl {
+.user-control {
   text-align: right;
 }
 
-.container-fluid.createUserForm{
+.container-fluid.create-user-form {
   margin-top: 150px;
   max-width: 600px;
 }
@@ -61,14 +61,14 @@ button {
   min-width: 35px;
 }
 
-.controlButton {
+.control-button {
   font-weight: bold;
 }
 
-.tableButton,
-.tableButton.active,
-.tableButton:active,
-.tableButton:focus {
+.table-button,
+.table-button.active,
+.table-button:active,
+.table-button:focus {
   background-color: #191919;
   outline: none !important;
   outline-offset: 0;
@@ -82,15 +82,15 @@ button {
   margin-left: -3px;
 }
 
-.tableButton:hover {
+.table-button:hover {
   background-color: silver;
 }
 
-.favoriteButton {
+.favorite-button {
   width: 143px;
 }
 
-.playButton {
+.play-button {
   width: 53px;
   max-width: 53px;
 }
@@ -107,17 +107,26 @@ button {
   margin-right: 10px;
 }
 
-.trackTitle {
+.track-title {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: bold;
   vertical-align: bottom;
 }
 
-.embedAudio {
+.embed-audio {
   vertical-align: middle;
   margin-left: 11px;
   margin-right: 12px;
+}
+
+.results-bottom-border {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-right: 21px solid black;
+  width: 1345px;
+  height: 2px;
 }
 
 
@@ -129,13 +138,20 @@ table {
   margin-right: auto;
   width: 1345px;
   table-layout: fixed;
-  border-bottom: 2px solid white;
 }
 
 td, th {
   background-color: #191919;
   border: 2px solid white;
   padding-left: 3px;
+}
+
+tbody tr:first-child td {
+  border-top: 0px;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0px;
 }
 
 thead tr {
@@ -179,10 +195,10 @@ th {
 .results-tbody {
   display: block;
   overflow: auto;
-  height: 495px;
+  max-height: 495px;
   width: 100%;
 }
 
-.favoriteCell {
+.favorite-cell {
   text-align: right;
 }

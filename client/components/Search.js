@@ -19,7 +19,7 @@ render() {
     return (
         <React.Fragment>
             <input type="text" className="form-control" ref="searchText"/>
-            <Button className="controlButton" onClick={this.changeSearchText}>Search</Button>
+            <Button className="control-button" onClick={this.changeSearchText}>Search</Button>
         </React.Fragment>
     );
 }

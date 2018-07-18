@@ -92,18 +92,18 @@ render() {
     	<React.Fragment>
 	        <Modal isOpen={this.state.modalStatus} className='Modal'>
 	            <div>{this.state.serverResponse}</div>
-	            <Button className='controlButton' onClick={this.closeModal}>Close</Button>
+	            <Button className='control-button' onClick={this.closeModal}>Close</Button>
 	        </Modal>    	
-	    	<div className='userControl'>
+	    	<div className='user-control'>
 		    	{this.props.currentUser ?
-		    		<span><span className='user-name-text'>Logged in as: {this.props.currentUser}</span><Button className='controlButton' onClick={this.props.logoutHandler}>Log Out</Button></span>
+		    		<span><span className='user-name-text'>Logged in as: {this.props.currentUser}</span><Button className='control-button' onClick={this.props.logoutHandler}>Log Out</Button></span>
 		    	: 
 		            <span className='form-inline'>
 		            	<input className='form-control' placeholder='username' onChange={this.handleUsername} />
 		            	<input className='form-control' placeholder='password' onChange={this.handlePassword} />
 
-			            <Button className='controlButton' onClick={this.handleLogin}>Log In</Button>
-			            <Link to="/createUser"><Button className='controlButton'>Create User</Button></Link>
+			            <Button className='control-button' onClick={this.handleLogin}>Log In</Button>
+			            <Link to="/createUser"><Button className='control-button'>Create User</Button></Link>
 		            </span>
 		     	}
 	     	</div>

@@ -36,13 +36,13 @@ audioEnded() {
 render() {
     return (
     	<React.Fragment>
-			<audio ref='audioRef' controls onEnded={this.audioEnded} className='embedAudio'>
+			<audio ref='audioRef' controls onEnded={this.audioEnded} className='embed-audio'>
 			  <source src={"http://www.archive.org/download/" + this.props.identifier + "/" + this.props.fileName} type="audio/mpeg" />
 			  Cannot play audio
 			</audio>
-	        <Button className='controlButton' value='next' onClick={this.props.transportHandler}>+</Button>
-	        <Button className='controlButton' value='previous' onClick={this.props.transportHandler}>-</Button>
-	        <span className="trackTitle">{"NOW PLAYING: [" + this.props.fileName + "]"}</span>
+	        <Button className='control-button' value='next' onClick={this.props.transportHandler}>+</Button>
+	        <Button className='control-button' value='previous' onClick={this.props.transportHandler}>-</Button>
+	        <span className="track-title">{"NOW PLAYING: [" + this.props.fileName + "]"}</span>
         </React.Fragment>
     );
 }

@@ -87,9 +87,9 @@ render() {
         <React.Fragment>
             <Modal isOpen={this.state.modalStatus} className='Modal'>
                 <div>{this.state.serverResponse}</div>
-                <Button className='controlButton' onClick={this.closeModal}>Close</Button>
+                <Button className='control-button' onClick={this.closeModal}>Close</Button>
             </Modal>
-            <div className='container-fluid createUserForm'>
+            <div className='container-fluid create-user-form'>
                 <div className='row'>
                     <h1>Create User</h1>
                 </div>
@@ -120,8 +120,8 @@ render() {
                     </div>
                     <div className='row'>
                         <div className='col-xs-12'>
-                            <Button className='controlButton' onClick={this.createUser}>Create</Button>
-                            <Link to="/"><Button className='controlButton'>Back</Button></Link>
+                            <Button className='control-button' onClick={this.createUser}>Create</Button>
+                            <Link to="/"><Button className='control-button'>Back</Button></Link>
                         </div>
                     </div>
             	</form>

@@ -50,17 +50,17 @@ render() {
                         this.props.data.map((exp, i) => {
                             return  <React.Fragment key={i}>
                                         <tr key={i}>
-                                            <td className='results-cell'><Button className='tableButton' value={i} onClick={this.props.expandHandler}>{ exp.hasOwnProperty('metadata') ? "-" : "+" }</Button></td>
+                                            <td className='results-cell'><Button className='table-button' value={i} onClick={this.props.expandHandler}>{ exp.hasOwnProperty('metadata') ? "-" : "+" }</Button></td>
                                             <td className='results-cell'>{this.truncateTitle(exp.title)}</td>
                                             <td className='results-cell'>{this.truncateDate(exp.date)}</td>
                                             <td className='results-cell'>{exp.avg_rating}</td>
                                             <td className='results-cell'>{exp.creator}</td>
-                                            <td className='results-cell favoriteCell'>
-                                                <Button className='tableButton' value={i + ",0"} onClick={this.props.playTrackHandler}>Play</Button>
+                                            <td className='results-cell favorite-cell'>
+                                                <Button className='table-button' value={i + ",0"} onClick={this.props.playTrackHandler}>Play</Button>
                                                 { (this.isFavorite(i) != -1) ?
-                                                <Button className='tableButton favoriteButton' value={this.isFavorite(i)} onClick={this.props.removeFavoriteHandler}>Remove Favorite</Button>
+                                                <Button className='table-button favorite-button' value={this.isFavorite(i)} onClick={this.props.removeFavoriteHandler}>Remove Favorite</Button>
                                                 :
-                                                <Button className='tableButton favoriteButton' value={i} onClick={this.props.favoriteHandler}>Favorite</Button>
+                                                <Button className='table-button favorite-button' value={i} onClick={this.props.favoriteHandler}>Favorite</Button>
                                                 }
                                             </td>
                                         </tr>
@@ -68,7 +68,7 @@ render() {
                                             exp.metadata.map((track, j) => {
                                                 return  <tr key={i + "," + j}>
                                                             <td colSpan='5'>{track.name}</td>
-                                                            <td><Button className='tableButton playButton' value={i + "," +j} onClick={this.props.playTrackHandler}>Play</Button></td>
+                                                            <td><Button className='table-button play-button' value={i + "," +j} onClick={this.props.playTrackHandler}>Play</Button></td>
                                                         </tr>
                                             })
                                         }
@@ -77,6 +77,7 @@ render() {
                             }
                     </tbody>
                 </table>
+                <div className='results-bottom-border'></div>
             </React.Fragment> }
         </React.Fragment>
 )};
