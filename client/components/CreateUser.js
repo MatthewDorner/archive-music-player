@@ -29,7 +29,6 @@ componentWillMount() {
     Modal.setAppElement('body');
 }
 
-
 /**** Handlers for this component actions ****/
 handleUsername(e) {
     this.setState({
