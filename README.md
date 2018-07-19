@@ -10,7 +10,7 @@ https://www.djamware.com/post/5a90c37980aca7059c14297a/securing-mern-stack-web-a
 
 The application uses archive.org's public API to allow a user to search for and play music from archive.org's collection of public-domain Grateful Dead recordings. A demo is available here:
 
-http://archive-music-player-archive-music-player2.1d35.starter-us-east-1.openshiftapps.com/
+https://archive-music-player-archive-music-player2.1d35.starter-us-east-1.openshiftapps.com/
 
 
 
