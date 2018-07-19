@@ -62,7 +62,6 @@ constructor(props) {
     this.viewFavorites = this.viewFavorites.bind(this);
 }
 
-
 /**** Lifecycle Hooks ****/
 componentWillMount() {
     Modal.setAppElement('body');
@@ -142,7 +141,6 @@ login(username) {
     });
     this.getFavorites();
 }
-
 
 logout() {
     localStorage.removeItem('jwtToken');
