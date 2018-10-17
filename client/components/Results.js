@@ -67,7 +67,7 @@ render() {
                                         { exp.hasOwnProperty("metadata") && 
                                             exp.metadata.map((track, j) => {
                                                 return  <tr key={i + "," + j}>
-                                                            <td colSpan='5'>{track.name}</td>
+                                                            <td colSpan='5'>{track.title}</td>
                                                             <td><Button className='table-button play-button' value={i + "," +j} onClick={this.props.playTrackHandler}>Play</Button></td>
                                                         </tr>
                                             })
