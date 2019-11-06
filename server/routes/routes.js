@@ -37,7 +37,7 @@ router.route('/insertFavorite')
                 res.send('Favorite successfully added!');
             });
         } else {
-            return res.status(403).send({ success: false, msg: 'Please log in to save your Favorites.' });
+            return res.status(401).send({ success: false, msg: 'Please log in to save your Favorites.' });
         }
     })
 
@@ -61,7 +61,7 @@ router.route('/deleteFavorite')
                 res.send('Favorite successfully deleted!');
             })
         } else {
-            return res.status(403).send({ success: false, msg: 'Please log in.' });
+            return res.status(401).send({ success: false, msg: 'Please log in.' });
         }
 });
 
@@ -83,7 +83,7 @@ router.get('/getUserFavorites', function(req, res) {
             res.json(favorites);
         });
     } else {
-        return res.status(403).send({ success: false, msg: 'Please log in to view your Favorites.' });
+        return res.status(401).send({ success: false, msg: 'Please log in to view your Favorites.' });
     }
 });
 
